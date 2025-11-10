@@ -1,0 +1,62 @@
+# ----------------------------
+# Playwright + TypeScript setup
+# ----------------------------
+
+# Node modules
+node_modules/
+
+# Build output
+dist/
+out/
+build/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Playwright test artifacts
+playwright-report/
+test-results/
+blob-report/
+trace.zip
+
+# Screenshots and videos
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.webm
+
+# If you want to keep some reference images for visual tests, you can re-include them:
+# !tests/assets/reference-images/*.png
+
+# Coverage output
+coverage/
+
+# Package manager lockfiles (optional, choose one)
+# yarn.lock
+# package-lock.json
+# pnpm-lock.yaml
+
+# Miscellaneous
+.tmp/
+.cache/
