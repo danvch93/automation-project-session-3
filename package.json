@@ -1,0 +1,36 @@
+{
+  "name": "mega-image-playwright-framework",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript automation framework for Mega Image frontend using Page Object Model, step screenshots, and HTML reporting.",
+  "main": "index.js",
+  "scripts": {
+    "install:playwright": "npx playwright install --with-deps",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "PWDEBUG=1 playwright test",
+    "allure:clean": "rimraf allure-report allure-results",
+    "allure:generate": "allure generate --clean allure-results --output allure-report",
+    "allure:open": "allure open allure-report",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "automation",
+    "page-object-model",
+    "allure",
+    "mega-image"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^20.12.12",
+    "allure-commandline": "^2.29.0",
+    "allure-playwright": "^2.15.1",
+    "dotenv": "^16.4.5",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.5"
+  }
+}
+
